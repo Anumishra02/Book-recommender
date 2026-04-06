@@ -1,3 +1,4 @@
 {
-    "python.defaultInterpreterPath": "D:\\anaconda\\python.exe"
+    "python.defaultInterpreterPath": "D:\\anaconda\\python.exe",
+    "python-envs.defaultEnvManager": "ms-python.python:system"
 }
