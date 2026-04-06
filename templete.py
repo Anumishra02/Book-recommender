@@ -25,6 +25,7 @@ list_of_files=[
     f"{project_name}/pipeline/training_pipeline.py",
     f"{project_name}/utils/_init_.py",
     f"{project_name}/utils/util.py",
+    "config/config.yaml",
     ".dockerignore",
     "app.py",
     "Dockerfile",

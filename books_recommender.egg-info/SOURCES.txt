@@ -1,0 +1,6 @@
+README.md
+setup.py
+books_recommender.egg-info/PKG-INFO
+books_recommender.egg-info/SOURCES.txt
+books_recommender.egg-info/dependency_links.txt
+books_recommender.egg-info/top_level.txt
