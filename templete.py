@@ -1,3 +1,6 @@
+
+import os
+from pathlib import Path
 import logging
 logging.basicConfig(level=logging.INFO,format='[%(asctime)s]: %(message)s:')
 project_name="books_recommender"
@@ -21,13 +24,26 @@ list_of_files=[
     f"{project_name}/pipeline/_init_.py",
     f"{project_name}/pipeline/training_pipeline.py",
     f"{project_name}/utils/_init_.py",
-    f"{project_name}/utils/utils.py",
+    f"{project_name}/utils/util.py",
     ".dockerignore",
     "app.py",
     "Dockerfile",
     "setup.py"
-    "test.py"
-
-
 
 ]
+
+for filepath in list_of_files:
+    filepath=Path(filepath)
+    filedir,filename=os.path.split(filepath)
+    if filedir!="":
+        os.makedirs(filedir,exist_ok=True)
+        
+        logging.info(f"Creating directory: {filedir} for the file: {filename}")
+
+    if (not os.path.exists(filename)) or (os.path.getsize(filename) == 0):
+        with open(filepath,'w') as f:
+            pass
+            logging.info(f"Creating file: {filename}")
+
+    else:
+        logging.info(f"{filename} already created")
