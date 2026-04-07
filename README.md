@@ -1,3 +1,18 @@
+# Book-Recommender 
+
+## workflow
+-config.yaml
+-entity
+-config/configuration.py
+-components
+-pipeline
+-main.py
+-app.py
+
+# How to run?
+### STEPS:
+
+clone the repository
 ```bash
 https://github.com/Anumishra02/Book-recommender
 ```

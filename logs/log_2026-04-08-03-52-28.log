@@ -1,0 +1,18 @@
+[2026-04-08 03:52:33,172] root - INFO - ====================Data Ingestion log started.==================== 
+[2026-04-08 03:52:33,172] root - INFO - Data Ingestion Config: DatasetConfig(dataset_download_url='https://github.com/Anumishra02/Book-recommender/raw/refs/heads/main/ecommerce-books_data.zip', raw_data_dir='artifacts\\dataset\\raw_data', ingested_dir='artifacts\\dataset\\ingested_data')
+[2026-04-08 03:52:33,172] root - INFO - Data Validation Config: DataValidationConfig(clean_data_dir='artifacts\\dataset\\clean_data', books_csv_file='artifacts\\dataset\\ingested_data\\BX-Books.csv', ratings_csv_file='artifacts\\dataset\\ingested_data\\BX-Book-Ratings.csv', serialized_objects_dir='artifacts\\serialized_objects')
+[2026-04-08 03:52:33,173] root - INFO - Downloading data from https://github.com/Anumishra02/Book-recommender/raw/refs/heads/main/ecommerce-books_data.zip into file artifacts\dataset\raw_data\ecommerce-books_data.zip
+[2026-04-08 03:52:46,197] root - INFO - Downloaded data from https://github.com/Anumishra02/Book-recommender/raw/refs/heads/main/ecommerce-books_data.zip into file artifacts\dataset\raw_data\ecommerce-books_data.zip
+[2026-04-08 03:52:47,209] root - INFO - Extracting zip file: artifacts\dataset\raw_data\ecommerce-books_data.zip into dir: artifacts\dataset\ingested_data
+[2026-04-08 03:52:47,209] root - INFO - ====================Data Ingestion log completed.==================== 
+
+
+[2026-04-08 03:52:47,209] root - INFO - ====================Data Validation log started.==================== 
+[2026-04-08 03:52:50,257] root - INFO -  Shape of ratings data file: (1149780, 3)
+[2026-04-08 03:52:50,257] root - INFO -  Shape of books data file: (271360, 8)
+[2026-04-08 03:52:52,209] root - INFO -  Shape of the final clean dataset: (59850, 9)
+[2026-04-08 03:52:52,608] root - INFO - Saved cleaned data to artifacts\dataset\clean_data
+[2026-04-08 03:52:52,649] root - INFO - Saved final_rating serialization object to artifacts\serialized_objects
+[2026-04-08 03:52:52,780] root - INFO - ====================Data Validation log completed.==================== 
+
+
